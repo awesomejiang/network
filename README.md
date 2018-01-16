@@ -3,4 +3,7 @@
 See detailed readme file in project subdirectory.
 ---
 Jan./10/2018:
-pj1 completed.
+pj1(python) completed.
+
+Jan./15/2018:
+add c++ version of pj1.
