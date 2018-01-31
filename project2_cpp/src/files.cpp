@@ -31,7 +31,8 @@ Files::Files(){
 
 int Files::exist(string str){
 	fs::path p = "www"+str;
-	if(fs::exists(p) && !fs::is_directory(p)){
+	//process redirect.defs as special case
+	if(fs::exists(p) && !fs::is_directory(p) && str != "redirect.defs"){
 		return 1;
 	}
 	else{

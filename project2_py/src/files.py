@@ -14,8 +14,10 @@ class Files(object):
 
 
 	def exist(self, string):
-
-		return os.path.isfile("www"+string)
+		if string == "/redirect.defs":#special case
+			return 0;
+		else:
+			return os.path.isfile("www"+string)
 
 	def redirected(self, string):
 
